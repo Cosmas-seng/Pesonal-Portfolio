@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Cosmas Njenga | Software Engineer</title>
+        <link rel="stylesheet" href="/profile-site/static/style.css">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="icon" id="login">Admin</button> 
+            <button class="icon" id="theme" aria-label="Toggle theme">🌓</button>
+        </nav>
+        <main>
+            <div class="card hero">
+                <img class="avatar" src="/profile-site/static/images/20250526_160743.JPG" >
+                <div>
+                    <h1>Cosmas Njenga</h1>
+                    <div class="title" id="typed"></div>
+                    <div class="muted">📍 Nairobi, Kenya</div>
+                </div>
+            </div>
+
+        <section id="about" class="grid2">
+            <div class="card">
+                <h2>ABOUT</h2>
+                <p>
+                    Cosmas is a passionate developer and systems analyst based in Kenya, with growing expertise in programming, networking, and desktop application development. 
+                    Skilled in C, C++, Java, HTML, and VB.NET, he thrives on building practical solutions, debugging complex problems, and designing interactive applications.
+                </p>
+            </div>
+            <div class="stats">
+                <div class="stat"><b data-n="1">0</b>Years Experience</div>
+                <div class="stat"><b data-n="2" id="pc">0</b>Projects Completed</div>
+                <div class="stat"><b data-n="0">0</b>Happy Clients (yet!)</div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>SKILLS <span class="muted" style="letter-spacing:0;font-weight:400">· click to filter projects</span></h2>
+            <div class="chips" id="chips"></div>
+        </section>
+
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <div class="projects" id="plist">
+                <p class="muted">Loading…</p>
+            </div>
+            <div class="card" id="admin" hidden>
+                <h2>ADD A PROJECT</h2>
+                <form id="f"><input id="t" placeholder="Project title" required maxlength="80">
+                    <textarea id="d" placeholder="Short description" rows="2" maxlength="300"></textarea>
+                    <input id="g" placeholder="Tags, comma separated (e.g. Python, C++)">
+                    <input id="l" placeholder="Link (optional, https://…)">
+                    <button class="go">Save to database</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="card contact">
+                <h2>CONTACT</h2>
+                <p>✉️ 
+                    <a href="mailto:ndungucosma1@gmail.com" id="em">ndungucosma1@gmail.com</a> 
+                    <button class="icon" id="cp">Copy</button>
+                </p>
+                <p>📍 Nairobi, Kenya</p>
+                <p>📞 <a href="tel:+254745462019">+254 745 462 019</a></p>
+            </div>
+        </section>
+        </main>
+        <script src="/profile-site/static/script.js"></script>
+    </body>
+</html>
