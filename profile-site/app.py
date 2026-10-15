@@ -2,15 +2,15 @@ import hmac, json, os, re
 from pathlib import Path
 import pymysql
 from pymysql.cursors import DictCursor
-from flask import Flask, g, jsonify, render_template, request, session, url_for
+from flask import Flask, g, jsonify, render_template, request, session
 
 BASE = Path(__file__).parent
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "admin@123")
+ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "")
 DB_CFG = dict(
     host=os.environ.get("DB_HOST", "127.0.0.1"),
     port=int(os.environ.get("DB_PORT", "3306")),
     user=os.environ.get("DB_USER", "root"),
-    password=os.environ.get("DB_PASSWORD", "admin@123"),
+    password=os.environ.get("DB_PASSWORD", ""),
     charset="utf8mb4",
     cursorclass=DictCursor,
 )
